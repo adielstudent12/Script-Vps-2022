@@ -208,7 +208,7 @@ msg -ama "               Finalizando Instalacion" && msg bar2
 [[ $(find /etc/VPS-MX/controlador -name IDT.log | grep -w "IDT.log" | head -1) ]] || wget -O /etc/VPS-MX/controlador/IDT.log https://github.com/lacasitamx/VPSMX/raw/master/ArchivosUtilitarios/IDT.log &>/dev/null
 [[ $(find /etc/VPS-MX/controlador -name tiemlim.log | grep -w "tiemlim.log" | head -1) ]] || wget -O /etc/VPS-MX/controlador/tiemlim.log https://github.com/lacasitamx/VPSMX/raw/master/ArchivosUtilitarios/tiemlim.log &>/dev/null
 touch /usr/share/lognull &>/dev/null
-wget https://raw.githubusercontent.com/lacasitamx/VPSMX/master/SR/SPR -O /usr/bin/SPR &>/dev/null &>/dev/null
+wget https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/SPR -O /usr/bin/SPR &>/dev/null &>/dev/null
 chmod 775 /usr/bin/SPR &>/dev/null
 wget -O /usr/bin/SOPORTE https://www.dropbox.com/s/dz1onkls1685hc2/soporte &>/dev/null
 chmod 775 /usr/bin/SOPORTE &>/dev/null
