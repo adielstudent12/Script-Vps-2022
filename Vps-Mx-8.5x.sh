@@ -50,7 +50,7 @@ install_paketes() {
   clear && clear
   ### PAQUETES PRINCIPALES
   msg -bar2
-  msg -ama "  [ SCRIPT-FREE  \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
+  msg -ama "  [ SCRIPT-PREMIUM  \033[1;97m ❌Adiel Ramirez❌\033[1;33m ]"
   msg -bar
   echo -e "\033[97m"
   echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA VPS-MX --    \e[49m"
@@ -196,8 +196,8 @@ rm -rf /etc/VPS-MX/herramientas/speed.sh
 rm -rf /etc/VPS-MX/herramientas/speedtest.py
 cd /etc/VPS-MX/herramientas
 wget https://github.com/adielstudent12/Script-Vps-2022/blob/main/speedtest_v1.tar?raw=true >/dev/null 2>&1
-tar -xf speedtest_v1.tar >/dev/null 2>&1
-rm -rf speedtest_v1.tar >/dev/null 2>&1
+tar -xf speedtest_v1.tar?raw=true >/dev/null 2>&1
+rm -rf speedtest_v1.tar?raw=true >/dev/null 2>&1
 cd
 [[ ! -d /etc/VPS-MX/v2ray ]] && mkdir /etc/VPS-MX/v2ray
 [[ ! -d /etc/VPS-MX/Slow ]] && mkdir /etc/VPS-MX/Slow
