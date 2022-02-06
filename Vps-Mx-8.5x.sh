@@ -215,10 +215,10 @@ chmod 775 /usr/bin/SOPORTE &>/dev/null
 SOPORTE &>/dev/null
 wget -O /bin/resetsshdrop https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/resetsshdrop &>/dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/lacasitamx/VPSMX/master/SCRIPT-8.4/Vercion &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/Version &>/dev/null
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
-v1=$(curl -sSL "https://raw.githubusercontent.com/lacasitamx/VPSMX/master/SCRIPT-8.4/Vercion") 
+v1=$(curl -sSL "https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/Version") 
 echo "$v1" > /etc/versin_script 
 msg -bar2
 echo '#!/bin/sh -e' >/etc/rc.local
