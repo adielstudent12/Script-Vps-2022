@@ -170,10 +170,10 @@ install_paketes
 mkdir /etc/VPS-MX >/dev/null 2>&1
 
 cd /etc/VPS-MX
-wget https://github.com/adielstudent12/Script-Vps-2022/blob/main/VPS-MX.tar.xz?raw=true >/dev/null 2>&1
-tar -xf VPS-MX.tar.xz >/dev/null 2>&1
-chmod +x VPS-MX.tar.xz >/dev/null 2>&1
-rm -rf VPS-MX.tar.xz
+wget https://github.com/adielstudent12/Script-Vps-2022/blob/main/RAMIREZ.tar.xz?raw=true >/dev/null 2>&1
+tar -xf RAMIREZ.tar.xz >/dev/null 2>&1
+chmod +x RAMIREZ.tar.xz >/dev/null 2>&1
+rm -rf RAMIREZ.tar.xz
 cd
 chmod -R 755 /etc/VPS-MX
 rm -rf /etc/VPS-MX/MEUIPvps
