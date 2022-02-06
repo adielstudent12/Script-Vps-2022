@@ -53,7 +53,7 @@ install_paketes() {
   msg -ama "  [ SCRIPT-PREMIUM  \033[1;97m ❌Adiel Ramirez❌\033[1;33m ]"
   msg -bar
   echo -e "\033[97m"
-  echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA VPS-MX --    \e[49m"
+  echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA SCRIPT --    \e[49m"
   echo -e "\033[97m"
   msg -bar
   #grep
@@ -241,10 +241,10 @@ echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[92mRESELLER : $mess1 "' >>.bashrc
 echo 'echo -e "\t\e[1;33mVERSION: \e[1;31m$(cat /etc/versin_script_new)"' >>.bashrc
 echo 'echo "" ' >>.bashrc
-echo 'echo -e "\t\033[97mPARA MOSTAR PANEL BASH ESCRIBA: sudo VPSMX o menu "' >>.bashrc
+echo 'echo -e "\t\033[97mPARA MOSTAR PANEL BASH ESCRIBA: menu "' >>.bashrc
 echo 'echo ""' >>.bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
-echo -e "  \033[1;41m               sudo VPSMX o menu             \033[0;37m" && msg -bar2
+echo -e "  \033[1;41m               menu             \033[0;37m" && msg -bar2
 rm -rf /usr/bin/pytransform &>/dev/null
 rm -rf VPS-MX.sh
 rm -rf lista-arq
