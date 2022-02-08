@@ -243,7 +243,7 @@ echo 'echo -e "\t\e[1;33mVERSION: \e[1;31m$(cat /etc/versin_script_new)"' >>.bas
 echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[97mPara Mostrar el Panel Principal: menu "' >>.bashrc
 echo 'echo ""' >>.bashrc
-echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
+echo -e "         ☆Para Mostrar el Panel Principal☆ "
 echo -e "  \033[1;41m               menu             \033[0;37m" && msg -bar2
 rm -rf /usr/bin/pytransform &>/dev/null
 rm -rf VPS-MX.sh
