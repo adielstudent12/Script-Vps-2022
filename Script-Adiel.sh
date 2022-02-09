@@ -244,7 +244,7 @@ echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[97mPara Mostrar el Panel Principal: menu "' >>.bashrc
 echo 'echo ""' >>.bashrc
 echo -e "         ☆Para Mostrar el Panel Principal☆ "
-echo -e "  \033[1;41m                        menu                 \033[0;37m" && msg -bar2
+echo -e "  \033[1;41m          menu                 \033[0;37m" && msg -bar2
 rm -rf /usr/bin/pytransform &>/dev/null
 rm -rf VPS-MX.sh
 rm -rf lista-arq
