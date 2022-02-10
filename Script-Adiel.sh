@@ -213,6 +213,8 @@ chmod 775 /usr/bin/SPR &>/dev/null
 wget -O /usr/bin/SOPORTE https://www.dropbox.com/s/dz1onkls1685hc2/soporte &>/dev/null
 chmod 775 /usr/bin/SOPORTE &>/dev/null
 SOPORTE &>/dev/null
+wget -O /bin/monitor.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/Monitor-Service/monitor.sh &> /dev/null
+chmod +x /bin/monitor.sh
 wget -O /bin/resetsshdrop https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/resetsshdrop &>/dev/null
 chmod +x /bin/resetsshdrop
 wget -O /etc/versin_script_new https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022/main/Version &>/dev/null
