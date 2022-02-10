@@ -22,8 +22,8 @@ NOM=`less /etc/VPS-MX/controlador/nombre.log` > /dev/null 2>&1
 NOM1=`echo $NOM` > /dev/null 2>&1
 IDB=`less /etc/VPS-MX/controlador/IDT.log` > /dev/null 2>&1
 IDB1=`echo $IDB` > /dev/null 2>&1
-KEY="862633455:AAEgkSywlAHQQOMXzGHJ13gctV6wO1hm25Y"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
+KEY="0"
+URL="https://api.telegram.org"
 MSG="⚠️ _AVISO DE VPS:_ *$NOM1* ⚠️
 ❗️ _Protocolo_ *[ $1 ]* _con Fallo_ ❗️ 
 🛠 _-- Reiniciando Protocolo_ -- 🛠 "
@@ -75,8 +75,8 @@ NOM=`less /etc/VPS-MX/controlador/nombre.log` > /dev/null 2>&1
 NOM1=`echo $NOM` > /dev/null 2>&1
 IDB=`less /etc/VPS-MX/controlador/IDT.log` > /dev/null 2>&1
 IDB1=`echo $IDB` > /dev/null 2>&1
-KEY="862633455:AAEgkSywlAHQQOMXzGHJ13gctV6wO1hm25Y"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
+KEY="0"
+URL="https://api.telegram.org"
 MSG="⚠️ _AVISO DE VPS:_ *$NOM1* ⚠️
 ❗️ _Protocolo_ *[ BADVPN ]* _con Fallo_ ❗️ 
 🛠 _-- Reiniciando Protocolo_ -- 🛠 "
@@ -97,8 +97,8 @@ NOM=`less /etc/VPS-MX/controlador/nombre.log` > /dev/null 2>&1
 NOM1=`echo $NOM` > /dev/null 2>&1
 IDB=`less /etc/VPS-MX/controlador/IDT.log` > /dev/null 2>&1
 IDB1=`echo $IDB` > /dev/null 2>&1
-KEY="862633455:AAEgkSywlAHQQOMXzGHJ13gctV6wO1hm25Y"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
+KEY="0"
+URL="https://api.telegram.org"
 MSG="⚠️ _AVISO DE VPS:_ *$NOM1* ⚠️
 ❗️ _Protocolo_ *[ PyDirec: $port ]* _con Fallo_ ❗️ 
 🛠 _-- Reiniciando Protocolo_ -- 🛠 "
