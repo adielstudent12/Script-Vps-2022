@@ -242,8 +242,6 @@ echo 'echo "" ' >>.bashrc
 echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >>.bashrc
 echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[92mRESELLER : $mess1 "' >>.bashrc
-echo 'echo -e "\t\e[1;33mVERSION: \e[1;31m$(cat /etc/versin_script_new)"' >>.bashrc
-echo 'echo "" ' >>.bashrc
 echo 'echo -e "\t\033[97mPara Mostrar el Panel Principal: menu "' >>.bashrc
 echo 'echo ""' >>.bashrc
 echo -e "         ☆Para Mostrar el Panel Principal☆ "
