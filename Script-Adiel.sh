@@ -225,7 +225,7 @@ v1=$(curl -sSL "https://raw.githubusercontent.com/adielstudent12/Script-Vps-2022
 echo "$v1" > /etc/versin_script 
 msg -bar2
 echo '#!/bin/sh -e' >/etc/rc.local
-sudo chmod +x /etc/rc.local
+chmod +x /etc/rc.local
 echo "sudo rebootnb" >>/etc/rc.local
 echo "sudo resetsshdrop" >>/etc/rc.local
 echo "sleep 2s" >>/etc/rc.local
