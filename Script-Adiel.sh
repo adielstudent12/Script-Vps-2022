@@ -50,7 +50,7 @@ install_paketes() {
   clear && clear
   ### PAQUETES PRINCIPALES
   msg -bar2
-  msg -azu "  [ 🔴 SCRIPT PREMIUM PRIVATE BY ANONYMOUS MX 🔴 ]"
+  msg -azu "    🔴 SCRIPT PREMIUM PRIVATE BY ANONYMOUS MX 🔴 ]"
   msg -bar
   echo -e "\033[97m"
   echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA SCRIPT --    \e[49m"
