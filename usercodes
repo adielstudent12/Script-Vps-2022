@@ -74,7 +74,7 @@
  msg -tit
  echo -e "\033[1;31m       BORRAR TODOS LOS USUARIOS REGISTRADOS"
  msg -bar
- read -p "   ►► Enter para Continuar  o CTRL + C Cancelar ◄◄"
+ read -p "   â–ºâ–º Enter para Continuar  o CTRL + C Cancelar â—„â—„"
  echo ""
  service dropbear stop &>/dev/null
  service sshd stop &>/dev/null
@@ -108,16 +108,16 @@
  msg -tit
  echo -e "\033[1;33m          REINICIAR CONTADOR DE BLOQUEOS"
  msg -bar
- echo -e "\033[1;97m !! Usar unicamente cuando en el apartado del contador\nmarque alguna cantidad erronea. ¡¡"
+ echo -e "\033[1;97m !! Usar unicamente cuando en el apartado del contador\nmarque alguna cantidad erronea. Â¡Â¡"
  echo ""
  echo -e "\033[1;91m ## Cancelar Precione CTRL+C"
  msg -bar
- read -p "        ►► Presione enter para continuar ◄◄"
+ read -p "        â–ºâ–º Presione enter para continuar â—„â—„"
  rm -rf /etc/VPS-MX/VPS-MX-userlock
  rm -rf /etc/VPS-MX/controlador/Limiter.log
  unlockall2
  msg -bar
- echo -e "\033[1;92m           ¡¡CONTADORES REINICIADOS!!"
+ echo -e "\033[1;92m           Â¡Â¡CONTADORES REINICIADOS!!"
  msg -bar
  msg -ne " Enter Para Continuar" && read enter
  ${SCPusr}/usercodes
@@ -177,10 +177,10 @@
  limseg="$(less /etc/VPS-MX/controlador/tiemdes.log)"
  KEY="2012880601:AAEJ3Kk18PGDzW57LpTMnVMn_pQYQKW3V9w"
  URL="https://api.telegram.org/bot$KEY/sendMessage"
- MSG="⚠️ AVISO DE VPS: $NOM1 ⚠️
- 🔹 CUENTA: $1
- ❗️📵 BLOCK FIJO/TEMPORAL 📵❗️
- 🔓( AUTOUNLOCK EN $limseg SEGUNDOS) 🔓"
+ MSG="âš ï¸ AVISO DE VPS: $NOM1 âš ï¸
+ ðŸ”¹ CUENTA: $1
+ â—ï¸ðŸ“µ BLOCK FIJO/TEMPORAL ðŸ“µâ—ï¸
+ ðŸ”“( AUTOUNLOCK EN $limseg SEGUNDOS) ðŸ”“"
  curl -s --max-time 10 -d "chat_id=$IDB1&disable_web_page_preview=1&text=$MSG" $URL &>/dev/null
  pkill -u $1 &>/dev/null
  fi
@@ -591,17 +591,17 @@
  1)msg -verm "$(fun_trans "Usuario Nulo")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  2)msg -verm "$(fun_trans "Usuario con nombre muy corto")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  3)msg -verm "$(fun_trans "Usuario con nombre muy grande")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
- 4)msg -verm "$(fun_trans "Contraseña Nula")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
- 5)msg -verm "$(fun_trans "Contraseña muy corta")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
- 6)msg -verm "$(fun_trans "Contraseña muy grande")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
+ 4)msg -verm "$(fun_trans "ContraseÃ±a Nula")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
+ 5)msg -verm "$(fun_trans "ContraseÃ±a muy corta")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
+ 6)msg -verm "$(fun_trans "ContraseÃ±a muy grande")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  7)msg -verm "$(fun_trans "Duracion Nula")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  8)msg -verm "$(fun_trans "Duracion invalida utilize numeros")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
- 9)msg -verm "$(fun_trans "Duracion maxima y de un año")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
+ 9)msg -verm "$(fun_trans "Duracion maxima y de un aÃ±o")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  11)msg -verm "$(fun_trans "Limite Nulo")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  12)msg -verm "$(fun_trans "Limite invalido utilize numeros")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  13)msg -verm "$(fun_trans "Limite maximo de 999")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  14)msg -verm "$(fun_trans "Usuario Ya Existe")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
- 15)msg -verm "$(fun_trans "la contraseña que ingreso ya existe,deve de ingresarlo diferente o igual que el nombre del usuario")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
+ 15)msg -verm "$(fun_trans "la contraseÃ±a que ingreso ya existe,deve de ingresarlo diferente o igual que el nombre del usuario")"; sleep 2s; tput cuu1; tput dl1; tput cuu1; tput dl1;;
  esac
  }
  new_user () {
@@ -639,7 +639,7 @@
  break
  done
  while true; do
- msg -ne "$(fun_trans "Contraseña Del Nuevo Usuario")"
+ msg -ne "$(fun_trans "ContraseÃ±a Del Nuevo Usuario")"
  read -p ": " senhauser
  if [[ -z $senhauser ]]; then
  err_fun 4 && continue
@@ -682,7 +682,7 @@
  msg -bar
  msg -ne "$(fun_trans "  >> IP del Servidor"): " && echo -e "$(meu_ip)"
  msg -ne "$(fun_trans "  >> Usuario"): " && echo -e "$nomeuser"
- msg -ne "$(fun_trans "  >> Contraseña"): " && echo -e "$senhauser"
+ msg -ne "$(fun_trans "  >> ContraseÃ±a"): " && echo -e "$senhauser"
  msg -ne "$(fun_trans "  >> Dias de Duracion"): " && echo -e "$diasuser"
  msg -ne "$(fun_trans "  >> Fecha de Expiracion"): " && echo -e "$(date "+%F" -d " + $diasuser days")"
  msg -ne "$(fun_trans "  >> Limite de Conexion"): " && echo -e "$limiteuser"
@@ -1016,7 +1016,7 @@
  }
  while true; do
  msg -ne "$(fun_trans "Usuario Seleccionado"): " && echo -e "$useredit"
- msg -ne "Nueva Contraseña de:\033[1;33m $useredit"
+ msg -ne "Nueva ContraseÃ±a de:\033[1;33m $useredit"
  read -p ": " senhauser
  if [[ -z "$senhauser" ]]; then
  err_fun 4 && continue
@@ -1056,7 +1056,7 @@
  tput cuu1 && tput dl1
  tput cuu1 && tput dl1
  msg -ne "$(fun_trans " >> Usuario"): " && echo -e "$useredit"
- msg -ne "$(fun_trans " >> Contraseña"): " && echo -e "$senhauser"
+ msg -ne "$(fun_trans " >> ContraseÃ±a"): " && echo -e "$senhauser"
  msg -ne "$(fun_trans " >> Dias de Duracion"): " && echo -e "$diasuser"
  msg -ne "$(fun_trans " >> Fecha de Expiracion"): " && echo -e "$(date "+%F" -d " + $diasuser days")"
  msg -ne "$(fun_trans " >> Limite de Conexion"): " && echo -e "$limiteuser"
@@ -1074,7 +1074,7 @@
  msg -bar
  cat_users=$(cat "/etc/passwd"|grep 'home'|grep 'hwid'|grep -v 'syslog')
  dat_us=$(printf '%-20s%-12s%-8s%s' 'Cliente' 'Fecha' 'Dias' 'Statu')
- msg -azu "  N°  $dat_us"
+ msg -azu "  NÂ°  $dat_us"
  msg -bar
  i=1
  for u in `echo "${cat_users}"|awk -F ':' '{print $1}'`; do
@@ -1088,9 +1088,9 @@
  pass="$(printf '%-19s' "$pass")"
  unset stat
  if [[ $(passwd --status $u|cut -d ' ' -f2) = "P" ]]; then
- stat="$(msg -verd "◉ ")"
+ stat="$(msg -verd "â—‰ ")"
  else
- stat="$(msg -verm2 "📵 ")"
+ stat="$(msg -verm2 "ðŸ“µ ")"
  fi
  echo -ne "  $(msg -verd "$i)")$(msg -verm2 "-") $(msg -azu "${pass}")"
  if [[ $(echo $fecha|awk '{print $2}') = "" ]]; then
@@ -1127,7 +1127,7 @@
  msg -bar
  cat_users=$(cat "/etc/passwd"|grep 'home'|grep 'token'|grep -v 'syslog')
  dat_us=$(printf '%-20s%-12s%-8s%s' 'Cliente' 'Fecha' 'Dias' 'Statu')
- msg -azu "  N°  $dat_us"
+ msg -azu "  NÂ°  $dat_us"
  msg -bar
  i=1
  for u in `echo "${cat_users}"|awk -F ':' '{print $1}'`; do
@@ -1141,9 +1141,9 @@
  pass="$(printf '%-19s' "$pass")"
  unset stat
  if [[ $(passwd --status $u|cut -d ' ' -f2) = "P" ]]; then
- stat="$(msg -verd "◉ ")"
+ stat="$(msg -verd "â—‰ ")"
  else
- stat="$(msg -verm2 "📵 ")"
+ stat="$(msg -verm2 "ðŸ“µ ")"
  fi
  echo -ne "  $(msg -verd "$i)")$(msg -verm2 "-") $(msg -azu "${pass}")"
  if [[ $(echo $fecha|awk '{print $2}') = "" ]]; then
@@ -1179,7 +1179,7 @@
  msg -ama "$(fun_trans "        INFORMACION DE USUARIOS SSH REGISTRADOS ")"
  msg -bar2
  cat_users=$(cat "/etc/passwd"|grep 'home'|grep 'false'|grep -v 'syslog')
- dat_us=$(printf '%-13s%-14s%-10s%-4s%-6s%s' 'Usuario' 'Contraseña' 'Fecha' 'Dia' 'Limit' 'Statu')
+ dat_us=$(printf '%-13s%-14s%-10s%-4s%-6s%s' 'Usuario' 'ContraseÃ±a' 'Fecha' 'Dia' 'Limit' 'Statu')
  msg -azu "  $dat_us"
  msg -bar
  i=1
@@ -1194,9 +1194,9 @@
  pass="$(printf '%-12s' "$pass")"
  unset stat
  if [[ $(passwd --status $u|cut -d ' ' -f2) = "P" ]]; then
- stat="$(msg -verd "◉ ")"
+ stat="$(msg -verd "â—‰ ")"
  else
- stat="$(msg -verm2 "📵 ")"
+ stat="$(msg -verm2 "ðŸ“µ ")"
  fi
  Limit=$(cat ${USRdatabase}|grep -w "$u"|cut -d'|' -f4)
  [[ "${#Limit}" = "1" ]] && Limit=$(printf '%2s%-4s' "$Limit") || Limit=$(printf '%-6s' "$Limit")
@@ -1493,9 +1493,9 @@
  EXPIRED="1+"
  block_userfun $user -loked && echo " $user (EXPIRADO) $(date +%r--%d/%m/%y)" >> $LIMITERLOG && echo " $user (EXPIRADO) $(date +%r--%d/%m/%y)" >> $LIMITERLOG2 && KEY="2012880601:AAEJ3Kk18PGDzW57LpTMnVMn_pQYQKW3V9w"
  URL="https://api.telegram.org/bot$KEY/sendMessage"
- MSG="⚠️ AVISO DE VPS: $NOM1 ⚠️
- 🔹 CUENTA: $user
- ❗️ �� EXPIRADA �� ❗️"
+ MSG="âš ï¸ AVISO DE VPS: $NOM1 âš ï¸
+ ðŸ”¹ CUENTA: $user
+ â—ï¸ ï¿½ï¿½ EXPIRADA ï¿½ï¿½ â—ï¸"
  curl -s --max-time 10 -d "chat_id=$IDB1&disable_web_page_preview=1&text=$MSG" $URL && pkill -u $user
  echo -e "\033[1;31m EXPIRADO"
  continue
@@ -1569,7 +1569,7 @@
  ;;
  2)
  while [[ ! -e ${dirbackup} ]]; do
- echo -ne "\033[1;37m ¡¡Recomiendo DESACTIVAR Limitador si es que lo tine ACTIVO!!\n"
+ echo -ne "\033[1;37m Â¡Â¡Recomiendo DESACTIVAR Limitador si es que lo tine ACTIVO!!\n"
  echo -ne "\033[1;37m Escriba la ubicacion de la copia de seguridad\n"
  msg -bar
  echo -ne "\033[1;37m ENTER: para ruta predeterminada /root/VPS-MX-Backup: " && read dirbackup
@@ -1611,7 +1611,7 @@
  PIDVRF="$(ps aux|grep "${SCPusr}/usercodes verificar"|grep -v grep|awk '{print $2}')"
  if [[ -z $PIDVRF ]]; then
  msg -bar
- echo -ne "\033[1;96m   ¿Cada cuantos segundos ejecutar el limitador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 120s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemlim
+ echo -ne "\033[1;96m   Â¿Cada cuantos segundos ejecutar el limitador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 120s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemlim
  [[ -z "$tiemlim" ]] && tiemlim="120"
  echo "${tiemlim}" > /etc/VPS-MX/controlador/tiemlim.log
  cd ${SCPusr}
@@ -1642,7 +1642,7 @@
  PIDVRF2="$(ps aux|grep "${SCPusr}/usercodes desbloqueo"|grep -v grep|awk '{print $2}')"
  if [[ -z $PIDVRF2 ]]; then
  msg -bar
- echo -ne "\033[1;96m   ¿Cada cuantos segundos ejecutar el desbloqueador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 300s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemdes
+ echo -ne "\033[1;96m   Â¿Cada cuantos segundos ejecutar el desbloqueador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 300s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemdes
  [[ -z "$tiemdes" ]] && tiemdes="300"
  echo "${tiemdes}" > /etc/VPS-MX/controlador/tiemdes.log
  cd ${SCPusr}
@@ -1681,14 +1681,14 @@
  msg -ne "$(fun_trans  "Inserte el BANNER de preferencia en HTML sin saltos"): \n\n" && read ban_ner
  echo ""
  msg -bar
- credi="$(less /etc/VPS-MX/message3.txt)"
+ credi="$(less /etc/VPS-MX/message.txt)"
  echo "$ban_ner" >> $local
  echo '<p style="text-align: center;"><span style="color: #ff0000;"><strong>'$credi'</strong></span><br /><em><span style="color: #ff0000;"><strong>SCRIPT - VPS&bull;MX</strong></span></em></p>' >> $local
  if [[ -e "$local2" ]]; then
  rm $local2  > /dev/null 2>&1
  cp $local $local2 > /dev/null 2>&1
  fi
- msg -verd "$(fun_trans  "           BANNER AGREGADO CON !! EXITO ¡¡" )" && msg -bar
+ msg -verd "$(fun_trans  "           BANNER AGREGADO CON !! EXITO Â¡Â¡" )" && msg -bar
  service dropbear stop 2>/dev/null
  service ssh restart 2>/dev/null
  service dropbear restart 2>/dev/null
@@ -1708,7 +1708,7 @@
  service dropbear stop 2>/dev/null
  service ssh restart 2>/dev/null
  service dropbear restart 2>/dev/null
- echo -e "\033[1;92m            BANNER ELIMINADO !! EXITO ¡¡ "
+ echo -e "\033[1;92m            BANNER ELIMINADO !! EXITO Â¡Â¡ "
  msg -bar
  }
  clear
@@ -1789,9 +1789,9 @@
  msg -ama "  MENU ADMINISTRACION DE USUARIOS SSL/SSH/DROPBEAR"
  msg -bar
  msg -bar3
- menu_func "CREAR NUEVO USUARIO [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "CREAR USUARIO TEMPORAL" "REMOVER USUARIO [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "BLOQUEAR |DESBLOQUEAR USUARIO" "REINICIAR CONTADOR DE BLOQUEADOS |EXPIRADOS" "EDITAR USUARIO" "RENOVAR USUARIO" "MOSTRAR CUENTAS [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "USUARIOS CONECTADOS [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m] " "ELIMINAR USUARIOS VENCIDOS" "BACKUP USUARIOS" "AGREGAR/ELIMINAR BANNER " "\033[1;31m⚠️ELIMINAR TODOS LOS USUARIOS⚠️ \n" " -fi ${verificar}   \033[1;97m🔒 LIMITADOR-DE-CUENTAS 🔒 \n" " -fi ${desbloqueo}   \033[1;97m🔓 DESBLOQUEO-AUTOMATICO 🔓 \n" "\033[1;92mLOG DE CUENTAS REGISTRADAS" "LIMPIAR LOG DE LIMITADOR"
- [[ -e "${SCPusr}/Limiter2.log" ]] && echo -ne "$(msg -verd "  [18]") $(msg -verm2 "➄1�7 ") " &&  msg -azu "$(fun_trans "\033[1;93mVER LOG DE LIMITADOR")"
- echo -ne ""$(msg -bar)"   \n$(msg -verd "  [0]") $(msg -verm2 "➄1�7 ")" &&  msg -bra  "  \e[97m\033[1;41m VOLVER \033[1;37m"
+ menu_func "CREAR NUEVO USUARIO [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "CREAR USUARIO TEMPORAL" "REMOVER USUARIO [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "BLOQUEAR |DESBLOQUEAR USUARIO" "REINICIAR CONTADOR DE BLOQUEADOS |EXPIRADOS" "EDITAR USUARIO" "RENOVAR USUARIO" "MOSTRAR CUENTAS [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m]" "USUARIOS CONECTADOS [\e[31m\e[43mSSH/HWID/TOKEN \e[0m\e[37m] " "ELIMINAR USUARIOS VENCIDOS" "BACKUP USUARIOS" "AGREGAR/ELIMINAR BANNER " "\033[1;31mâš ï¸ELIMINAR TODOS LOS USUARIOSâš ï¸ \n" " -fi ${verificar}   \033[1;97mðŸ”’ LIMITADOR-DE-CUENTAS ðŸ”’ \n" " -fi ${desbloqueo}   \033[1;97mðŸ”“ DESBLOQUEO-AUTOMATICO ðŸ”“ \n" "\033[1;92mLOG DE CUENTAS REGISTRADAS" "LIMPIAR LOG DE LIMITADOR"
+ [[ -e "${SCPusr}/Limiter2.log" ]] && echo -ne "$(msg -verd "  [18]") $(msg -verm2 "âž„1¤7 ") " &&  msg -azu "$(fun_trans "\033[1;93mVER LOG DE LIMITADOR")"
+ echo -ne ""$(msg -bar)"   \n$(msg -verd "  [0]") $(msg -verm2 "âž„1¤7 ")" &&  msg -bra  "  \e[97m\033[1;41m VOLVER \033[1;37m"
  msg -bar
  selection=$(selection_fun 19)
  case ${selection} in
